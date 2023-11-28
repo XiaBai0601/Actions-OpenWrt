@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/BPI-SINOVOIP/BPI-R3MINI-OPENWRT-V21.02.3.git
+  REPO_URL: https://github.com/potatoigit/immortalwrt-mt798x_bpir3_mini.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -72,7 +72,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install -a && cp -f defconfig/mt7986-ax6000.config .config
 
     - name: Load custom configuration
       run: |

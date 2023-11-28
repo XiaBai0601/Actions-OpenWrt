@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/BPI-SINOVOIP/BPI-R3MINI-OPENWRT-V21.02.3
+  REPO_URL: https://github.com/XiaBai0601/BPI-R3MINI-OPENWRT-V21.02.3
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config

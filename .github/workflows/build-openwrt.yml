@@ -72,7 +72,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a && cp -f defconfig/mt7986-ax6000.config .config
+      run: cd openwrt && ./scripts/feeds install -a && cp -f defconfig/mt7986-ax4200-bpir3_mini.config .config
 
     - name: Load custom configuration
       run: |

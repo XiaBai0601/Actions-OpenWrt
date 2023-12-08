@@ -13,3 +13,16 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+# 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间(根据编译机型变化,自行调整删除名称)
+cat >"$CLEAR_PATH" <<-EOF
+packages
+config.buildinfo
+feeds.buildinfo
+sha256sums
+version.buildinfo
+profiles.json
+openwrt-x86-64-generic-kernel.bin
+openwrt-x86-64-generic.manifest
+openwrt-x86-64-generic-squashfs-rootfs.img.gz
+EOF

@@ -176,6 +176,11 @@ jobs:
         CONFIG_PACKAGE_ip6tables-extra=y
         CONFIG_PACKAGE_ip6tables-mod-nat=y
         CONFIG_PACKAGE_ipv6helper=y
+        CONFIG_PACKAGE_kmod-usb-net=y
+        CONFIG_PACKAGE_kmod-usb-net-rndis=y
+        CONFIG_PACKAGE_kmod-usb2=y
+        CONFIG_PACKAGE_kmod-usb3=y
+        CONFIG_PACKAGE_usb-modeswitch=y
         EOF
 
         # LuCI插件选择:
@@ -212,8 +217,8 @@ jobs:
 
         # LuCI主题:
         cat >> .config <<EOF
-        CONFIG_PACKAGE_luci-theme-argon=y
-        CONFIG_PACKAGE_luci-app-argon-config=y
+        #CONFIG_PACKAGE_luci-theme-argon=y
+        #CONFIG_PACKAGE_luci-app-argon-config=y
         CONFIG_PACKAGE_luci-theme-design=y
         EOF
 

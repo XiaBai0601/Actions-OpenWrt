@@ -10,6 +10,8 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+# 修改主机名称为OpenWrt-123(填0为不作修改)
+export Op_name="Mi-R3G"                
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
